@@ -1,0 +1,103 @@
+body{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+p   {
+  text-align: center;
+}
+}
+.container{
+  background:grey;
+  padding:20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0,01);
+  max-width: 800px;
+  width: 100%;
+  
+}
+  header{
+      background:white;
+      padding:20px;
+      text-align: center;
+
+  }
+form{
+  display:flex;
+  flex-direction:column;
+}
+img{
+  width:50%;
+  max-width: 600px;
+  margin: 20px auto;
+  align-items: center;
+}
+nav ul{
+  background-color: white;
+  color:aqua;
+  list-style:none;
+  text-align: center;
+  padding:10px
+}
+nav ul li{
+  display:inline;
+  
+}
+footer{
+  background-color:white;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+}
+/* Make the nav bar fixed at the top */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding: 1em;
+  z-index: 1000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-item {
+      margin: 0.5em 0;
+  }
+}
+
+/* Add drop-down menu styles */
+.nav-item .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown a:hover {
+  background-color: #575757;
+}
